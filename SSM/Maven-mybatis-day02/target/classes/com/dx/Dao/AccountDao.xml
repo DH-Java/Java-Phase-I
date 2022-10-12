@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dx.Dao.AccountDao">
+    <!--定义封装account和user的resultMap-->
+    <resultMap id="accountUserMap" type="com.dx.User.Account">
+            <id property="ID" column="aid"></id>
+            <result property="UID" column="uid"></result>
+            <result property="MONEY" column="money"></result>
+        <!--一对一的关系映射，配置封装userMybatis的内容 property里面是一个主表实体的对象引用-->
+        <association property="userMybatis" column="uid" javaType="com.dx.User.UserMybatis">
+            <id property="id" column="id"></id>
+            <result property="username" column="username"></result>
+            <result property="sex" column="sex"></result>
+            <result property="address" column="address"></result>
+            <result property="birthday" column="birthday"></result>
+        </association>
+    </resultMap>
+    <!--查询所有账户操作-->
+    <select id="findAll" resultMap="accountUserMap">
+        select u.* ,a.ID as aid,a.uid,a.money from user u,account a where u.id = a.uid;
+    </select>
+
+    <!--查询所有账户，同时还要获取到当前用户的所属用户信息-->
+    <select id="findAllAccount" resultType="com.dx.User.AccountUser">
+        select a.*,u.username,u.address from account a,user u where u.id = a.UID
+    </select>
+</mapper>

@@ -1,0 +1,16 @@
+person:
+  name: 罗浩${random.uuid}
+  age: ${random.int}
+  address: 沙坪坝
+  birth: 2019/09/03
+  maps: {k1: v1,k2: v2}
+  lists:
+    - code
+    - music
+    - gril
+  dog:
+    name: ${person.hello:helli}_罗浩
+    age: 3
+
+
+

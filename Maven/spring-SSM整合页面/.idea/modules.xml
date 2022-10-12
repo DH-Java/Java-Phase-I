@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Maven-00-parent/Maven-00-parent.iml" filepath="$PROJECT_DIR$/../Maven-00-parent/Maven-00-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Maven-01-entity/Maven-01-entity.iml" filepath="$PROJECT_DIR$/../Maven-01-entity/Maven-01-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Maven-02-mapper/Maven-02-mapper.iml" filepath="$PROJECT_DIR$/../Maven-02-mapper/Maven-02-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-SSM整合页面.iml" filepath="$PROJECT_DIR$/.idea/spring-SSM整合页面.iml" />
+    </modules>
+  </component>
+</project>

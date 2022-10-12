@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jl1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../environment/Maven/apache-maven-3.8.4-bin/apache-maven-3.8.4/maven-repository/jl1/jl1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

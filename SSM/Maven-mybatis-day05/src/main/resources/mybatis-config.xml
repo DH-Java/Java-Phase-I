@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--mybatis的主配置文件-->
+<configuration>
+    <!--配置properties
+        可以在标签内部配置连接数据库的信息，也可以通过属性引用外部配置信息
+            resource属性 常用的
+                用于指定配置文件的位置，是按照类路径的写法来写，并且必须存在于类路径下。
+            url属性
+                是要求按照url的写法来写地址
+                URL：Uniform Resource Locator 统一资源定位符。它是可以唯一标识一个资源的位置。
+                它的写法：
+                http://localhost:8080/mybatisserver/domeservlet
+                协议      主机      端口      URL-->
+    <properties resource="JDBCconfig.Properties"></properties>
+    <!--开启Mybatis支持延迟加载-->
+    <settings>
+        <!--开启二级缓存，默认开启，不需要配置-->
+        <setting name="cacheEnabled" value="true"/>
+        <!--延迟加载的全局开关。当开启时，所有关联对象都会延迟加载。 特定关联关系中可通过设置 fetchType 属性来覆盖该项的开关状态。-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--开启时，任一方法的调用都会加载该对象的所有延迟加载属性。 否则，每个延迟加载属性会按需加载（参考 lazyLoadTriggerMethods)。-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+
+    </settings>
+    <!--使用typeAliases配置别名，他只能配置User中类的别名-->
+    <typeAliases>
+        <!--typeAliases用于配置别名。type属性指定的是实体类全限定类名，alias属性指定别名，当指定了别名就不在区分大小写-->
+        <!--<typeAlias type="com.dx.User.UserMybatis" alias="User"></typeAlias>-->
+
+        <!--用于指定要配置别名的包，当指定之后，该包下的实体类都会注册别名，并且类名就是别名，不在区分大小写-->
+        <package name="com.dx.User"/>
+    </typeAliases>
+    <!--配置环境-->
+    <environments default="mysql">
+        <!--配置mysql配置环境-->
+        <environment id="mysql">
+            <!--配置事物的类型-->
+            <transactionManager type="JDBC"/>
+            <!--配置数据源（连接池）-->
+            <dataSource type="POOLED">
+                <!--配置数据库与的四个基本信息-->
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--指定映射配置文件的位置，映射配置文件指的是每个dao独立的配置文件-->
+    <mappers>
+        <!--<mapper resource="com/dx/Dao/AccountDao.xml"/>-->
+        <!--package标签是用于指定dao接口所在的包，当指定了之后就不需要在写mapper以及resource或者class了-->
+        <package name="com.dx.Dao"/>
+    </mappers>
+    <!--接口加个select注解,并且UserDao.xml和注解不能同时存在
+    如果使用注解来配置的话，此处应该使用class属性指定被注解的dao全限定类名-->
+    <!--      <mappers>-->
+    <!--          <mapper class="com.dx.Dao.UserDao"></mapper>-->
+    <!--      </mappers>-->
+</configuration>

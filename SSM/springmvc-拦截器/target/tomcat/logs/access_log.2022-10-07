@@ -1,0 +1,7 @@
+127.0.0.1 - - [07/Oct/2022:11:42:53 +0800] "GET /books HTTP/1.1" 200 24 http-bio-80-exec-1 188
+127.0.0.1 - - [07/Oct/2022:14:32:03 +0800] "GET /books/10 HTTP/1.1" 200 25 http-bio-80-exec-1 221
+127.0.0.1 - - [07/Oct/2022:14:33:04 +0800] "GET /books/10 HTTP/1.1" 200 - http-bio-80-exec-1 111
+127.0.0.1 - - [07/Oct/2022:14:45:25 +0800] "POST /books HTTP/1.1" 200 - http-bio-80-exec-1 88
+127.0.0.1 - - [07/Oct/2022:14:47:05 +0800] "POST /books HTTP/1.1" 200 27 http-bio-80-exec-1 343
+127.0.0.1 - - [07/Oct/2022:15:08:56 +0800] "POST /books HTTP/1.1" 200 27 http-bio-80-exec-1 328
+127.0.0.1 - - [07/Oct/2022:15:08:59 +0800] "POST /books HTTP/1.1" 200 27 http-bio-80-exec-2 8

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="02_springboot-configuration" />
+        <module name="01_springboot-ini" />
+        <module name="03_extern_configuration" />
+        <module name="04_configutaion_inject" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="01_springboot-ini" target="1.8" />
+      <module name="01_SpringBoot-Initializr" target="1.8" />
+      <module name="01_springboot_ini" target="1.8" />
+      <module name="01_SpringBoot_Initializr" target="1.8" />
+      <module name="02_configuration_file" target="1.8" />
+      <module name="02_springboot-configuration" target="1.8" />
+      <module name="03_extern_configuration" target="1.8" />
+      <module name="04_configutaion_inject" target="1.8" />
+      <module name="SpringBoot-Parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="01_SpringBoot-Initializr" options="-parameters" />
+      <module name="01_SpringBoot_Initializr" options="-parameters" />
+      <module name="01_springboot-ini" options="-parameters" />
+      <module name="01_springboot_ini" options="-parameters" />
+      <module name="02_configuration_file" options="-parameters" />
+      <module name="02_springboot-configuration" options="-parameters" />
+      <module name="03_extern_configuration" options="-parameters" />
+      <module name="04_configutaion_inject" options="-parameters" />
+      <module name="SpringBoot-Parent" options="-parameters" />
+    </option>
+  </component>
+</project>

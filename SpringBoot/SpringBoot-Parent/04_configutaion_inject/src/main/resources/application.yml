@@ -1,0 +1,18 @@
+user:
+  username: 邓豪
+  age: ${random.int[20]}
+  birthday: 2002/09/03
+#  两种方式都可以
+  hobbies: [唱歌,跳舞]
+#    - 唱
+#    - 跳
+#    - rap
+#    - 篮球
+  girl-friend: {1: 迪丽热巴,2: 赵露思}
+#    1: 迪丽热巴
+#    2: 赵露思
+  address:
+    id: 1
+    desc: ${user.username}重庆市
+
+

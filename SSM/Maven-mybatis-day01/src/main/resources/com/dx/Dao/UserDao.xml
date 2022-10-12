@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dx.Dao.UserDao">
+    <!--配置 查询结果的列名和实体类的属性名的对应关系-->
+    <resultMap id="userMap" type="com.dx.User.UserMybatis">
+        <!--主键对应的字段-->
+        <id property="UserId" column="id"></id>
+        <!--非主键对应的字段-->
+        <result property="UserName" column="username"></result>
+        <result property="UserBirthday" column="birthday"></result>
+        <result property="UserSex" column="sex"></result>
+        <result property="UserAddress" column="address"></result>
+    </resultMap>
+    <!--了解的内容，抽取重复的sql语句-->
+    <sql id="select">
+        select *
+        from user
+    </sql>
+    <!--查询用户操作-->
+    <select id="findAll" resultType="com.dx.User.UserMybatis">
+        <include refid="select"></include>
+    </select>
+    <!--添加用户操作-->
+    <insert id="insertUser" parameterType="com.dx.User.UserMybatis">
+        <!--配置插入操作后,获取插入数据的id-->
+        <selectKey keyProperty="id" keyColumn="id" resultType="java.lang.Integer" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into user(username,sex,birthday,address)values (#{username},#{sex},#{birthday},#{address})
+    </insert>
+    <!--修改用户操作-->
+    <update id="updateUser" parameterType="com.dx.User.UserMybatis">
+        update user
+        set username=#{username},
+            sex=#{sex},
+            birthday=#{birthday},
+            address=#{address}
+        where id = #{id}
+    </update>
+    <!--删除用户信息-->
+    <delete id="deleteUser" parameterType="java.lang.Integer">
+        delete
+        from user
+        where id = #{uid}
+    </delete>
+    <!--根据id查询用户信息-->
+    <select id="findById" parameterType="java.lang.Integer" resultType="UserMybatis">
+        select *
+        from user
+        where id = #{uid}
+    </select>
+    <!--根据名称模糊查询用户信息-->
+    <select id="findByName" parameterType="java.lang.String" resultType="com.dx.User.UserMybatis">
+        select *
+        from user
+        where username like #{uname}
+    </select>
+    <!--查询用户总数量-->
+    <select id="findCount" resultType="java.lang.Integer">
+        select count(id)
+        from user
+    </select>
+    <!--根据QueryVo中的条件查询用户-->
+    <select id="findByVo" parameterType="com.dx.User.QueryVo" resultType="com.dx.User.UserMybatis">
+        select *
+        from user
+        where username like #{userMybatis.username}
+    </select>
+    <!--根据条件查询-->
+    <select id="findByCondition" parameterType="com.dx.User.UserMybatis" resultType="com.dx.User.UserMybatis">
+        select *
+        from user
+        <where>
+            <if test="username != null">
+                and username = #{username}
+            </if>
+            <if test="sex != null">
+                and sex =#{sex}
+            </if>
+        </where>
+    </select>
+    <!--根据QueryVo中的id集合查询用户列表-->
+    <select id="findByIds" parameterType="java.lang.Integer" resultType="com.dx.User.UserMybatis">
+        <include refid="select"></include>
+        <where>
+            <if test="ids != null and ids.size()>0">
+                <foreach collection="ids" open="and id in (" close=")" item="id" separator=",">
+                    #{id}
+                </foreach>
+            </if>
+        </where>
+    </select>
+</mapper>

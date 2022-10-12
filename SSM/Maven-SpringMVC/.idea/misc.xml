@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../Maven-SpringMVC-demo02" />
+    <file type="web" url="file://$PROJECT_DIR$/../spring-SSM整合" />
+    <file type="web" url="file://$PROJECT_DIR$/../spring-SSM整合页面" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc-RESTful页面数据交互" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc-REST风格" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc-入门案例" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc-响应" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc-拦截器" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc-普通参数传递" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc-入门案例/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc-普通参数传递/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc-响应/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc-REST风格/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc-RESTful页面数据交互/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-SSM整合/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-SSM整合页面/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc-拦截器/pom.xml" />
+        <option value="$PROJECT_DIR$/../Mybatis-Plus/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

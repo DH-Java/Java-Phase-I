@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>#request 就是javax.servlet.http.HttpServletRequest</p>
+  contextPath:[[${#request.getContextPath()}]]<br>
+<p th:text="${#request.getParameter('name')}"></p>
+<p th:text="${#request.getAttribute('attrName')}"></p>
+
+<br>
+<p>#session 就是javax.servlet.http.HttpSession</p>
+<p th:text="${#session.getAttribute('sessionAttr')}"></p>
+<p th:text="${#session.getId()}"></p>
+<p th:text="${#session.getCreationTime()}"></p>
+
+<br>
+<p>#servletContext 就是javax.servlet.ServletContext</p>
+<p th:text="${#servletContext.getAttribute('contextAttr')}"></p>
+<p th:text="${#servletContext.getServerInfo()}"></p>
+
+<p>快捷对象param application request 不需要#</p>
+<p>param参数集合</p>
+<p>获取数组第0个参数值：[[${param.foo[0]}]]</p>
+<p>获取数组第1个参数值：[[${param.foo[1]}]]</p>
+<p>请求中参数数量：[[${param.size()}]]</p>
+<p>请求中userid参数值：[[${param.userid}]]</p>
+<p>判断请求是否有指定参数：[[${param.containsKey('name')}]]</p>
+<br>
+<p>使用session快捷对象</p>
+<p>获取session指定key的value：[[${session.sessionAttr}]]</p>
+<p>session中key的数量：[[${session.size()}]]</p>
+<br>
+<p>使用application快捷对象</p>
+<p>获取ServletContext中的数据：[[${application.contextAttr}]]</p>
+<p>全局ServletContext中key的数量：[[${application.size()}]]</p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body th:with="myurl='http://localhost:8080/myweb/hello.jsp?name=张三'">
+  模板名称：<p th:text="${#execInfo.templateName}"></p><br>
+  模板模式：<p th:text="${#execInfo.templateMode}"></p><br>
+<div th:with="espath=${#uris.escapePath(myurl)}">
+  <p>编码的值：[[${espath}]]</p>
+  <p>解码：[[${#uris.unescapePath(espath)}]]</p>
+  </div>
+  <br>
+  原始日期<p th:text="${mydate}"></p>
+  <p th:text="${#dates.format(mydate,'yyyy-MM-dd HH:mm:ss')}"></p>
+  <br>
+  原始数字<p th:text="${price}"></p>
+  <p th:text="${#numbers.formatInteger(price,0)}"></p>
+  <p th:text="${#numbers.formatInteger(price,3)}"></p>
+  <p th:text="${#numbers.formatInteger(price,4)}"></p>
+  <p th:text="${#numbers.formatDecimal(price,2,1)}"></p>
+  <br>
+  字符串数据[[${myname}]]
+  <p th:if="!${#strings.isEmpty(myname)}">myname 不是null</p>
+  <p th:text="${#strings.substring(myname,0,2)}"></p>
+  <p th:text="${#strings.indexOf(myname,'san')}"></p>
+  <p th:text="${#strings.toUpperCase(myname)}"></p>
+</body>
+</html>

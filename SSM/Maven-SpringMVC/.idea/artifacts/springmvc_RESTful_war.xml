@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springmvc-RESTful页面数据交互:war">
+    <output-path>$PROJECT_DIR$/../springmvc-RESTful页面数据交互/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>springmvc-RESTful页面数据交互</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="springmvc-RESTful-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="springmvc-RESTful页面数据交互:war exploded" />
+    </root>
+  </artifact>
+</component>

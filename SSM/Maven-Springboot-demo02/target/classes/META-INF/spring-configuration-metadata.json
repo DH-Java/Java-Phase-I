@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "com.springboot.Pojo.Person",
+      "sourceType": "com.springboot.Pojo.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.address",
+      "type": "java.lang.String",
+      "sourceType": "com.springboot.Pojo.Person"
+    },
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.springboot.Pojo.Person"
+    },
+    {
+      "name": "person.birth",
+      "type": "java.util.Date",
+      "sourceType": "com.springboot.Pojo.Person"
+    },
+    {
+      "name": "person.dog",
+      "type": "com.springboot.Pojo.Dog",
+      "sourceType": "com.springboot.Pojo.Person"
+    },
+    {
+      "name": "person.lists",
+      "type": "java.util.List",
+      "sourceType": "com.springboot.Pojo.Person"
+    },
+    {
+      "name": "person.maps",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "com.springboot.Pojo.Person"
+    },
+    {
+      "name": "person.name",
+      "type": "java.lang.String",
+      "sourceType": "com.springboot.Pojo.Person"
+    }
+  ],
+  "hints": []
+}

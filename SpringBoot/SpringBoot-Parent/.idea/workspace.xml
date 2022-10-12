@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d108e90-86ef-4cb5-96ea-f735a1cc8fd6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\environment\Maven\apache-maven-3.8.4-bin\apache-maven-3.8.4\maven-repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../environment/Maven/apache-maven-3.8.4-bin/apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="F:\environment\Maven\apache-maven-3.8.4-bin\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2FDaVG9ooyDhvufw0vaMqfxmJx5" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.111423224" />
+    <property name="project.structure.side.proportion" value="0.2721519" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IDEProject\IDEAProject\SpringBoot\SpringBoot-Parent\config" />
+      <recent name="F:\IDEProject\IDEAProject\SpringBoot\SpringBoot-Parent" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\IDEProject\IDEAProject\SpringBoot\SpringBoot-Parent\03_extern_configuration\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.dx.springbootinitializr" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBootIniApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="04_configutaion_inject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dx" />
+      <option name="MAIN_CLASS_NAME" value="com.dx.ApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="02_springboot-configuration" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springboot.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="03_extern_configuration" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="04_configutaion_inject" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dx.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootIniApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="01_springboot-ini" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SpringBoot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringBoot.SpringBootIniApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringBootIniApplication" />
+        <item itemvalue="JUnit.ApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d108e90-86ef-4cb5-96ea-f735a1cc8fd6" name="Default Changelist" comment="" />
+      <created>1664029130205</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664029130205</updated>
+      <workItem from="1664029131565" duration="972000" />
+      <workItem from="1664030129148" duration="262000" />
+      <workItem from="1664030815613" duration="325000" />
+      <workItem from="1664191212443" duration="4650000" />
+      <workItem from="1664198155080" duration="3304000" />
+      <workItem from="1664239199608" duration="237000" />
+      <workItem from="1664267029702" duration="18000" />
+      <workItem from="1665044981591" duration="2706000" />
+      <workItem from="1665047913328" duration="1037000" />
+      <workItem from="1665049171675" duration="7000" />
+      <workItem from="1665049191399" duration="1329000" />
+      <workItem from="1665050544527" duration="317000" />
+      <workItem from="1665053798332" duration="48000" />
+      <workItem from="1665063911854" duration="3450000" />
+      <workItem from="1665102993364" duration="79000" />
+      <workItem from="1665103583890" duration="95000" />
+      <workItem from="1665127634513" duration="42000" />
+      <workItem from="1665214023098" duration="192000" />
+      <workItem from="1665214802221" duration="89000" />
+      <workItem from="1665215289080" duration="264000" />
+      <workItem from="1665230854590" duration="971000" />
+      <workItem from="1665448670655" duration="74000" />
+      <workItem from="1665449172970" duration="7127000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="commons-logging-1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../百度网盘/jdbcTemplate jar包/jdbcTemplate相关jar包/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../百度网盘/jdbcTemplate jar包/jdbcTemplate相关jar包/spring-beans-5.1.10.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../百度网盘/jdbcTemplate jar包/jdbcTemplate相关jar包/spring-core-5.1.10.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../百度网盘/jdbcTemplate jar包/jdbcTemplate相关jar包/spring-jdbc-5.1.10.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../百度网盘/jdbcTemplate jar包/jdbcTemplate相关jar包/spring-tx-5.1.10.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

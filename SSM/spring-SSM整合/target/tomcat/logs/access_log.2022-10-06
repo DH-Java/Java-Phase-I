@@ -1,0 +1,17 @@
+127.0.0.1 - - [06/Oct/2022:15:23:10 +0800] "POST /books HTTP/1.1" 500 3483 http-bio-80-exec-1 829
+127.0.0.1 - - [06/Oct/2022:15:27:59 +0800] "POST /books HTTP/1.1" 200 14 http-bio-80-exec-1 829
+127.0.0.1 - - [06/Oct/2022:15:30:07 +0800] "DELETE /books/14 HTTP/1.1" 200 14 http-bio-80-exec-3 56
+127.0.0.1 - - [06/Oct/2022:15:31:46 +0800] "GET /books HTTP/1.1" 200 2105 http-bio-80-exec-5 92
+127.0.0.1 - - [06/Oct/2022:15:32:13 +0800] "POST /books HTTP/1.1" 200 14 http-bio-80-exec-6 13
+127.0.0.1 - - [06/Oct/2022:15:32:25 +0800] "DELETE /books/14 HTTP/1.1" 200 14 http-bio-80-exec-7 8
+127.0.0.1 - - [06/Oct/2022:15:32:43 +0800] "GET /books HTTP/1.1" 200 2206 http-bio-80-exec-8 16
+127.0.0.1 - - [06/Oct/2022:15:32:56 +0800] "DELETE /books/15 HTTP/1.1" 200 14 http-bio-80-exec-9 17
+127.0.0.1 - - [06/Oct/2022:15:33:24 +0800] "GET /books/1 HTTP/1.1" 200 154 http-bio-80-exec-10 8
+127.0.0.1 - - [06/Oct/2022:15:34:43 +0800] "PUT /books HTTP/1.1" 200 14 http-bio-80-exec-2 23
+127.0.0.1 - - [06/Oct/2022:15:35:02 +0800] "GET /books/1 HTTP/1.1" 200 110 http-bio-80-exec-2 8
+127.0.0.1 - - [06/Oct/2022:19:43:07 +0800] "POST /books HTTP/1.1" 200 48 http-bio-80-exec-1 1909
+127.0.0.1 - - [06/Oct/2022:19:43:17 +0800] "GET /books HTTP/1.1" 200 2193 http-bio-80-exec-2 72
+127.0.0.1 - - [06/Oct/2022:19:43:33 +0800] "GET /books/20 HTTP/1.1" 200 76 http-bio-80-exec-3 24
+127.0.0.1 - - [06/Oct/2022:19:43:56 +0800] "DELETE /books/16 HTTP/1.1" 200 48 http-bio-80-exec-4 17
+127.0.0.1 - - [06/Oct/2022:19:44:02 +0800] "GET /books HTTP/1.1" 200 2092 http-bio-80-exec-5 16
+127.0.0.1 - - [06/Oct/2022:19:59:13 +0800] "GET /books/20 HTTP/1.1" 200 - http-bio-80-exec-1 218

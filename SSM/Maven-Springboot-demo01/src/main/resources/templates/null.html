@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>null和空串使用</p>
+<p th:text="null">null值</p>
+<p th:text="''">空字符串</p>
+<p th:if="${name}==null">name是null</p>
+<p th:if="${myname}==''">myname是""</p>
+<p th:if="${name} eq null">使用eq判断null</p>
+<p th:if="${myname} eq ('')">使用eq判断""字符串</p>
+</body>
+</html>

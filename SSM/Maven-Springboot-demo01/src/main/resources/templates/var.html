@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:with="name='张三'">
+  <p th:text="${name}"></p>
+</div>
+
+<div th:with="id=1001,name='李四',age=${age}">
+  <p th:text="${id}"></p>
+  <p th:text="${name}"></p>
+  <p th:text="${age}"></p>
+</div>
+</body>
+</html>

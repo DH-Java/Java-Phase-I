@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--在当前页面中定义模板，在当前页面中使用模板-->
+<p th:fragment="course">
+    这是Thymeleaf课程
+</p>
+<br>
+<div id="tplId">这是使用id定义的模板</div>
+
+<p>第一次使用</p>
+<div th:insert="::course">
+    使用当前页面中的定义的模板
+</div>
+<p>第二次使用</p>
+<div th:insert="~{::course}">
+    使用当前页面中的定义的模板
+</div>
+
+<p>使用dom对象的id来引用模板</p>
+<div th:insert="::#tplId"></div>
+</body>
+
+<br>
+<!--只包含模板的标签-->
+<div th:replace="::course"></div>
+
+<br>
+<!--不包含模板的标签，使用使用模板的标签-->
+<div th:include="::course"></div>
+
+<p>执行remove删除All操作</p>
+<div th:remove="All">
+    <p>
+        去你妈的
+    </p>
+</div>
+<br>
+<p>执行remove删除body操作</p>
+<div th:remove="body">
+    <p>删除了</p>
+</div>
+<br>
+<p>指定tag删除范围</p>
+<div th:remove="tag">
+    tag范围值
+    <p>hello</p>
+</div>
+<br>
+<p>指定all-but-first</p>
+<div th:remove="all-but-first">
+    <p>第一个段落</p>
+    <p>第二个段落</p>
+    <p>第三个段落</p>
+</div>
+</html>

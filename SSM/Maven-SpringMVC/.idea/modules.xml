@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Maven-SpringMVC.iml" filepath="$PROJECT_DIR$/Maven-SpringMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Maven-SpringMVC-demo02/Maven-SpringMVC-demo02.iml" filepath="$PROJECT_DIR$/../Maven-SpringMVC-demo02/Maven-SpringMVC-demo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mybatis-Plus/Mybatis-Plus.iml" filepath="$PROJECT_DIR$/../Mybatis-Plus/Mybatis-Plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-SSM整合页面/spring-SSM.iml" filepath="$PROJECT_DIR$/../spring-SSM整合页面/spring-SSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-SSM整合/spring-SSM整合.iml" filepath="$PROJECT_DIR$/../spring-SSM整合/spring-SSM整合.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springmvc-拦截器/springmvc-03.iml" filepath="$PROJECT_DIR$/../springmvc-拦截器/springmvc-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springmvc-RESTful页面数据交互/springmvc-RESTful页面数据交互.iml" filepath="$PROJECT_DIR$/../springmvc-RESTful页面数据交互/springmvc-RESTful页面数据交互.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springmvc-REST风格/springmvc-REST风格.iml" filepath="$PROJECT_DIR$/../springmvc-REST风格/springmvc-REST风格.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springmvc-入门案例/springmvc-入门案例.iml" filepath="$PROJECT_DIR$/../springmvc-入门案例/springmvc-入门案例.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springmvc-响应/springmvc-响应.iml" filepath="$PROJECT_DIR$/../springmvc-响应/springmvc-响应.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springmvc-普通参数传递/springmvc-普通参数传递.iml" filepath="$PROJECT_DIR$/../springmvc-普通参数传递/springmvc-普通参数传递.iml" />
+    </modules>
+  </component>
+</project>

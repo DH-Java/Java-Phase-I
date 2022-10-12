@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Maven-mybatis-day01.iml" filepath="$PROJECT_DIR$/Maven-mybatis-day01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Maven-mybatis-day02/Maven-mybatis-day02.iml" filepath="$PROJECT_DIR$/../Maven-mybatis-day02/Maven-mybatis-day02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Maven-mybatis-day03/Maven-mybatis-day03.iml" filepath="$PROJECT_DIR$/../Maven-mybatis-day03/Maven-mybatis-day03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Maven-mybatis-day04/Maven-mybatis-day04.iml" filepath="$PROJECT_DIR$/../Maven-mybatis-day04/Maven-mybatis-day04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Maven-mybatis-day05/Maven-mybatis-day05.iml" filepath="$PROJECT_DIR$/../Maven-mybatis-day05/Maven-mybatis-day05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Maven-mybatis-day06/Maven-mybatis-day06.iml" filepath="$PROJECT_DIR$/../Maven-mybatis-day06/Maven-mybatis-day06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Maven-mybatis-day07/Maven-mybatis-day07.iml" filepath="$PROJECT_DIR$/../Maven-mybatis-day07/Maven-mybatis-day07.iml" />
+    </modules>
+  </component>
+</project>

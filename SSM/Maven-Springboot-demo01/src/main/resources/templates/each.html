@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>循环each使用</p>
+<br>
+<table>
+    <thead>
+    <tr>
+        <td>id</td>
+        <td>姓名</td>
+        <td>年龄</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="myuser:${user}">
+        <td th:text="${myuser.getId()}"></td>
+        <td th:text="${myuser.getName()}"></td>
+        <td th:text="${myuser.getAge()}"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<p>循坏each -Map<String,String></p>
+        <p th:each="m:${map}">
+            <span th:text="${m.key}"></span>
+            <span th:text="${m.value}"></span>
+        </p>
+<br>
+<p>循环each-list-map<p></p>
+<div>
+    <ul th:each="lm:${listmap}">
+        <li th:each="k:${lm}" th:text="${k.key}"></li>
+        <li th:each="v:${lm}" th:text="${v.value}"></li>
+    </ul>
+</div>
+
+<br>
+<p>循环数组</p>
+<ul th:each="n:${names}">
+    <li th:text="${n}"></li>
+</ul>
+<div>
+    <p>select组件</p>
+<select>
+    <option th:each="select:${cirty}"
+            th:value="${select.key}"
+            th:text="${select.value}"
+            th:selected="${select.value} eq ${choice}"></option>
+</select>
+</div>
+<br>
+<table border="1" cellpadding="0" th:cellpadding="0">
+    <thead>
+        <tr>
+            <td>信息</td>
+            <td>id</td>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>奇偶行</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="u,loopstatus:${user}">
+            <td th:text="${loopstatus.count} +'/'+${loopstatus.size}"></td>
+            <td th:text="${u.getId()}"></td>
+            <td th:text="${u.getName()}"></td>
+            <td th:text="${u.getAge()}"></td>
+            <td th:text="${loopstatus.odd?'奇数行':'偶数行'}"></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
